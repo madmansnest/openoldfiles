@@ -1,0 +1,35 @@
+Open Old Files
+==============
+
+What is it?
+-----------
+
+An extremely simple (15 lines of vimscript) plugin that shows a buffer with the contents of `:oldfiles` and allows the user to press `<CR>` to open the file under cursor or `<Esc>` to close the buffer.
+
+Neovim help files, terminal and fugitive windows are filtered out.
+
+How to install it?
+------------------
+
+Honestly, just copy the contents of `plugin/openoldfiles.vim` file into your `init.nvim` or `vimrc`.
+
+But you can also do `Plug 'madmansnest/openoldfiles'` or whatever you want.
+
+Add the following line to your `init.nvim` or `vimrc`:
+
+`nnoremap <Leader>oof <cmd>call openoldfiles#List()<CR>`
+
+Of course, you can use another mapping of your liking.
+
+How to use it?
+--------------
+
+Press `<Leader>oof` or whatever your mapping is.
+
+A buffer will open.
+
+You can navigate it as a regular vim buffer, using search, or whatever.
+
+To choose the file, move the cursor to it and press `<CR>`.
+
+To discard the buffer, press `<Esc>`.
