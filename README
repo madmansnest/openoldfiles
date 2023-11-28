@@ -6,7 +6,7 @@ What is it?
 
 An extremely simple (15 lines of vimscript) plugin that shows a buffer with the contents of `:oldfiles` and allows the user to press `<CR>` to open the file under cursor or `<Esc>` to close the buffer.
 
-Neovim help files, terminal and fugitive windows are filtered out.
+Vim/Neovim help files, terminal and fugitive windows are hopefully filtered out.
 
 How to install it?
 ------------------
